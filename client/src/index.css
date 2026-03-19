@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  
+  /* 🖼️ Original Image with high-quality settings */
+  background-image: url('/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect: Content scroll hoga, image nahi */
+  background-repeat: no-repeat;
+  
+  /* Fallback color agar image load na ho (dark brown/slate tone) */
+  background-color: #1a130e; 
+  
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 🪄 Modern Scrollbar taaki background hide na ho */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
