@@ -33,7 +33,7 @@ const Login = () => {
         <div className="min-h-screen flex items-center justify-center p-4">
             <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] w-full max-w-md transform transition-all hover:scale-[1.02]">
                 <h2 className="text-4xl font-extrabold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-                    LibSys Login
+                    peaceinlibrary Login
                 </h2>
                 
                 {error && <div className="bg-red-500/20 border border-red-500/50 text-red-200 p-3 mb-6 rounded-xl text-center backdrop-blur-sm">{error}</div>}

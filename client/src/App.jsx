@@ -14,7 +14,7 @@ const ProtectedRoute = ({ children, roleRequired }) => {
         return (
             <div className="min-h-screen flex items-center justify-center">
                 <div className="text-white text-xl font-bold animate-pulse bg-white/10 px-6 py-3 rounded-2xl backdrop-blur-md border border-white/20">
-                    Loading LibSys...
+                    Loading peaceinlibrary...
                 </div>
             </div>
         );
