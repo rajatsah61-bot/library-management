@@ -9,7 +9,7 @@ const AdminDashboard = () => {
     
     const [books, setBooks] = useState([]);
     const [transactions, setTransactions] = useState([]);
-    const [newBook, setNewBook] = useState({ title: '', author: '', category: '', totalCopies: '', returnDays: 14 });
+    const [newBook, setNewBook] = useState({ title: '', author: '', category: '', totalCopies: '', returnDays: '' });
     const [activeTab, setActiveTab] = useState('transactions');
 
     // 🔥 Modal State
@@ -29,7 +29,7 @@ const AdminDashboard = () => {
         e.preventDefault();
         try {
             await api.post('/books', newBook);
-            setNewBook({ title: '', author: '', category: '', totalCopies: '', returnDays: 14 });
+            setNewBook({ title: '', author: '', category: '', totalCopies: '', returnDays: '' });
             fetchData();
             alert('Book Added Successfully!');
             setActiveTab('catalog'); 
