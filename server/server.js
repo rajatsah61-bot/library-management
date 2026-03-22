@@ -10,6 +10,11 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // Parses incoming JSON requests
 
+
+app.get('/', (req, res) => {
+  res.status(200).send('Library Management Backend is running!');
+});
+
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/books', require('./routes/bookRoutes'));
